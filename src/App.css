@@ -1,0 +1,209 @@
+:root {
+  --primary: #664de5;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  transition: all 0.3s;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 100vh;
+}
+header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.heading {
+  font-size: 32px;
+  font-weight: 700;
+}
+.steps {
+  position: relative;
+  width: 360px;
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+}
+.steps::before {
+  content: "";
+  position: absolute;
+
+  top: 50%;
+  left: 0%;
+
+  height: 1px;
+  width: 100%;
+
+  background-color: #7a7a7a5c;
+  z-index: -1;
+}
+.progressLine {
+  position: absolute;
+
+  top: calc(50% - 1px);
+  left: 0%;
+
+  height: 3px;
+  width: 20%;
+
+  background-color: #664de5;
+  z-index: -1;
+}
+.step {
+  height: 3rem;
+  width: 3rem;
+
+  border-radius: 50%;
+  background-color: white;
+
+  text-align: center;
+  line-height: 3rem;
+  font-weight: 700;
+
+  color: black;
+
+  border: 0.1px solid #7a7a7a5c;
+
+  cursor: pointer;
+}
+.step.done {
+  color: white;
+  background-color: #664de5;
+}
+footer {
+  text-align: center;
+}
+.createWorkspace {
+  width: 400px;
+  height: 2.5rem;
+
+  outline: none;
+  border: none;
+
+  border-radius: 6px;
+
+  background-color: #664de5;
+  color: white;
+
+  font-size: 12px;
+  font-weight: 300;
+
+  cursor: pointer;
+}
+
+.labels {
+  width: max-content;
+  margin: auto;
+
+  text-align: center;
+}
+form {
+  display: flex;
+}
+main {
+  height: 300px;
+  width: 600px;
+}
+.form {
+  width: 0px;
+  height: max-content;
+  overflow: hidden;
+}
+.form.active {
+  width: 600px;
+  margin: 2rem 0;
+}
+
+.form h1 {
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+.form h5 {
+  font-size: 14px;
+  font-weight: 400;
+  color: #aeaeae;
+  margin-bottom: 0.5rem;
+}
+.form-input {
+  width: 400px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+.one label {
+  font-size: 16px;
+  font-weight: 400;
+
+  color: #aeaeae;
+  margin-bottom: 5px;
+}
+.one input {
+  height: 2.5rem;
+  margin-bottom: 1rem;
+
+  outline: none;
+  border: none;
+
+  border-radius: 12px;
+  border: 0.2px solid #7a7a7a5c;
+
+  padding: 0.5rem;
+}
+.three {
+  width: 400px;
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+
+  justify-content: space-between;
+}
+.radio {
+  width: 40%;
+  padding: 0.5rem 1rem;
+
+  border-radius: 5px;
+  border: 1px solid white;
+}
+.radio img {
+  margin: 1rem 0;
+}
+.radio.active {
+  border: 1px solid #664de5;
+}
+.radio .head {
+  font-weight: 700;
+  font-size: 14px;
+  margin-bottom: 0.5rem;
+}
+.radio .desc {
+  font-size: 12px;
+  font-weight: 400;
+  color: #aeaeae;
+  margin-bottom: 0.5rem;
+}
+.formFour {
+  text-align: center;
+}
+.formFour img {
+  margin: 1rem 0;
+}
+.step1 {
+  width: 20%;
+}
+.step2 {
+  width: 50%;
+}
+.step3 {
+  width: 80%;
+}
+.step4 {
+  width: 100%;
+}
